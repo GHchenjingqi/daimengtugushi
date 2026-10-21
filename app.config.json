@@ -1,0 +1,11 @@
+{
+  "appName": "古诗词 · 开放知识库",
+  "apkName": "GuShiCi",
+  "applicationId": "com.qux.gushici",
+  "versionName": "1.0.3",
+  "versionCode": 4,
+  "splashBackgroundColor": "#f3f9ff",
+  "statusBarStyle": "dark-content",
+  "remoteUrl": "https://gushici.app.workbuddy.host/",
+  "h5DevUrl": ""
+}

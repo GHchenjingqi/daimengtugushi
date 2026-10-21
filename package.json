@@ -1,0 +1,30 @@
+{
+  "name": "gushici",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "古诗词开放知识库 - 按标签分类的诗词应用",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:base": "vite build && node scripts/inject-api.js dist && node scripts/sync-to-base.js && node scripts/apply-app-meta.js",
+    "sync:base": "node scripts/inject-api.js dist && node scripts/sync-to-base.js && node scripts/apply-app-meta.js",
+    "sync:api": "node scripts/inject-api.js public",
+    "preview": "vite preview",
+    "start": "vite build --emptyOutDir=false && vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@tencent-ai/workbuddy-cloud-sdk": "dev",
+    "element-plus": "^2.7.6",
+    "opencc-js": "^1.4.2",
+    "pinyin-pro": "^3.24.0",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "unplugin-element-plus": "^0.11.2",
+    "unplugin-vue-components": "^32.1.0",
+    "vite": "^5.3.3"
+  }
+}
